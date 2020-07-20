@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>Static Site Generators</header>
+        <a href="#Introduction" class="nav-link" id="first-element">Introduction</a>
+        <a href="#Must_have_skills" class="nav-link">Must have skills</a>
+        <a href="#How_to_implement" class="nav-link">How to implement</a>
+        <a href="#Pros_and_cons" class="nav-link">Pros and cons</a>
+        <a href="#Website_resources" class="nav-link">Website resources</a>
+        <a href="#Additional_tips" class="nav-link">Additional tips</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <br>
+            <hr>
+            <p>Static site generators are responsible for the making of intermediary fully coded static sites and sites
+                made with
+                content management applications.<br>
+                Static site generators apply data and content to static web pages and hence generate dynamic views of
+                the webpage.</p>
+            <p>Most modern static site generators normally include an asset pipeline. The pipeline is responsible for
+                handling a number of processes including:
+            </p>
+            <ol>
+                <li>Asset compilation</li>
+                <li>Minification of assets</li>
+                <li>Transpilation</li>
+                <li>Bundling</li>
+            </ol>
+
+            <p>Examples of static generators include:
+            <ul>
+                <li>Next.js</li>
+                <li>Hugo</li>
+                <li>Gatsby</li>
+                <li>Nuxt</li>
+                <li>Slate</li>
+                <li>Docsify</li>
+            </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Must_have_skills">
+            <header> Must have skills </header>
+            <br>
+            <hr>
+            <p>Before venturing into website development using static site genereator, there are a number of skills
+                required.
+                <br>
+                One should have a basic understanding of website development with the prequisite knowledge in html and
+                basic javascript.
+                <br>
+                It is worthwhile to not that most of the modern static site generators are based on javascript.
+                <br>
+                Here is a list of necessary prerequisite skills:
+            <ul>
+                <li>Essentials of Javascript</li>
+                <li>A clear understanding of templates in web development</li>
+                <li>HTML</li>
+                <li>An understanding of how static site generators work</li>
+            </ul>
+            </p>
+            <p>With all these skills, it would be very easy for one to start developing web applications using static
+                site generators</p>
+        </section>
+        <section class="main-section" id="How_to_implement">
+            <header>How to implement</header>
+            <br>
+            <hr>
+            <p>To implement static site generation, we are going to use Next.js for this example.<br>
+                What is Next.js?<br>
+                >> Next.js is a minimalistic framework for server-rendered React applications as well as statically
+                exported React apps.
+                <br><br>
+            First, create a new folder
+
+            Run <br><br>
+            <code>mkdir testfolder</code><br><br>
+            Then run <br><br>
+            <code>cd testfolder</code><br><br>
+            Install next.js <br><br>
+            <code>npm install --save next react react-dom</code>
+
+            <br><br> Next, add the following build script in the package.json</p><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>
+                {
+                    "scripts": {
+                      "dev": "next",
+                      "build": "next build",
+                      "start": "next start"
+                    }
+                  }
+            </code>
+            <br><br>
+            <p>Try out some code, then run the folloqing command to start the server
+                <br><br>
+                <code>npm run dev</code>
+            </p>
+        </section>
+        <section class="main-section" id="Pros_and_cons">
+            <header> Pros and cons </header>
+            <br>
+            <hr>
+            <br>
+            <h2>Pros</h2>
+            <p>
+            <ol>
+                <li>Static site generators play a veryv significant role in improving the speed of a site</li>
+                <li>Since the developed site is static, there is easy and straightforward integration with CDNs. This
+                    saves on time</li>
+                <li>It is hard to ignore the fact that statically generated sites are simple to develop and maintain
+                </li>
+                <li>There are additional security benefits that accompany static site generation</li>
+                <li>Also, statically generated sites are usually easy to scale</li>
+            </ol>
+            </p>
+            <h2>Cons</h2>
+            <p>
+            <ol>
+                <li>Since they are file driven, their flexibility is limited</li>
+                <li>Everytime you eant to make updates on the system, you have to redeploy the whole system, which is
+                    inconvenient</li>
+                <li>Static sites have limited features as compared to dynamic sites</li>
+            </ol>
+            </p>
+        </section>
+        <section class="main-section" id="Website_resources">
+            <header> Website resources</header>
+            <br><hr>
+            <p>
+            <ol>
+                <div>
+                    <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1594565779/storo/Screen_Shot_2020-07-12_at_5.41.44_PM.png"
+                        alt=""><br>
+                    <label for="">Hugo</label>
+                    <p>Hugo is one of the most popular open-source static site generators. With its amazing speed and
+                        flexibility, Hugo makes building websites fun again.</p>
+                    <a href="https://gohugo.io">Visit the resource here</a>
+                </div>
+                <br>
+                <div>
+                    <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1594565839/storo/gat.png" alt=""><br>
+                    <label for="">Gatsby</label>
+                    <p>Blazing fast modern site generator for React. Go beyond static sites: build blogs, e-commerce
+                        sites, full-blown apps, and more with Gatsby.</p>
+                    <a href="https://www.gatsbyjs.org">Visit the resource here</a>
+                </div><br>
+                <div>
+                    <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1594565867/storo/nec.png" alt=""><br>
+                    <label for="">Next.js</label>
+                    <p>Production grade React applications that scale. The world's leading companies use Next.js by
+                        Vercel to build static and dynamic websites and web applications.</p>
+                    <a href="https://nextjs.org/">Visit the site here</a>
+                </div><br>
+                <div>
+                    <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1594565911/storo/grid.jpg" alt="">
+                    <br><label for="">Gridsome</label>
+                    <p>Gridsome is a free & open source Vue.js-powered framework for building websites & apps that are
+                        fast by default .</p>
+                    <a href="https://gridsome.org/">Visit the site here</a>
+                </div>
+            </ol>
+            </p>
+        </section>
+
+        <section class="main-section" id="Additional_tips">
+            <header> Additional tips</header>
+            <br>
+            <hr>
+            <p>To successfully implement a site in a static site generator, here are some tips to keep in mind</p>
+            <p>
+            <ol>
+                <li>Differenciate between a CMS and an SSG</li>
+                <li>Acknowledge the different security threats and vulnerabilities associated with SSGs</li>
+                <li>Know how to work with version control software such as git</li>
+                <li>Get acquainted with the JAM stack (Javascript, APIs, Markup)</li>
+            </ol>
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>
